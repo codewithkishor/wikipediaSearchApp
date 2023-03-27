@@ -6,8 +6,7 @@
 <div class="box">
   <form (submit)="onFormSubmit($event)">
     <input class="input input is-rounded" type="text" style="font-weight: bold;" (input)="term = $event.target.value"
-      placeholder="Search" />
-
+      placeholder="Search" /> &nbsp;
   </form>
-  <button class="btn btn-primary">Search</button>
+  <button class="btn btn-primary" (input)="term = $event.target.value">Search</button>
 </div>
